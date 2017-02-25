@@ -8,7 +8,3 @@ enabled:
   - phpdoc_order
   - phpdoc_separation
   - unalign_double_arrow
-
-disabled:
-  - align_double_arrow
-  - phpdoc_align
