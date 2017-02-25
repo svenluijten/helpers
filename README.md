@@ -42,7 +42,7 @@ The helpers and their documentation / usage is written below:
 This function will return `true` if you're on the given route name, `false` otherwise.
 
 ```php
-$isHome = current_route('home')
+$isHome = current_route('home');
 ```
 
 You may also pass in optional `$positive` or `$negative` values to return:
