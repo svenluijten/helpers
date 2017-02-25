@@ -39,7 +39,7 @@ Or add the package to your dependencies in `composer.json` and run
 All available functions are listed here, along with their usage and an example on how I would use them.
 
 ### current_route
-This function will return `true` if you're on the given route name, `false` otherwise.
+This function will return `true` if you're on the given route name, `false` otherwise:  
 
 ```php
 $isHome = current_route('home');
@@ -51,7 +51,15 @@ You may also pass in optional `$positive` or `$negative` values to return:
 $isContact = current_route('contact', 'Yes!', 'No :(');
 ```
 
-Can be useful for navigation in blade templates:
+There is also an option to give it an array of multiple route names instead of just one. The function will
+return `$positive` if the current route matches any of the given ones, `$negative` otherwise:
+
+```php
+$isContactOrAbout = current_route(['contact', 'about']);
+```
+
+`current_route()` can be tremendously useful for `active` states on for instance navigation in blade templates:
+
 ```blade
 <nav>
     <ul>
