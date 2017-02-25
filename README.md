@@ -9,13 +9,11 @@
 [![Code Climate][ico-codeclimate]][link-codeclimate]
 [![Code Quality][ico-quality]][link-quality]
 [![SensioLabs Insight][ico-insight]][link-insight]
+[![StyleCI][ico-styleci]][link-styleci]
 
 This is a collection of useful helpers for use in Laravel applications. Mainly
 made for personal use, but if you find (some of) the helpers useful, feel free
 to use it!
-
-> :insight
-> :hero
 
 ## Installation
 Via [composer](http://getcomposer.org):
@@ -92,6 +90,7 @@ though. See the [contributors page](../../graphs/contributors) for all contribut
 [ico-codeclimate]: https://img.shields.io/codeclimate/github/svenluijten/helpers.svg?style=flat-square
 [ico-quality]: https://img.shields.io/scrutinizer/g/svenluijten/helpers.svg?style=flat-square
 [ico-insight]: https://img.shields.io/sensiolabs/i/:insight.svg?style=flat-square
+[ico-styleci]: https://styleci.io/repos/83132069/shield
 
 [link-packagist]: https://packagist.org/packages/sven/helpers
 [link-downloads]: https://packagist.org/packages/sven/helpers
@@ -99,3 +98,4 @@ though. See the [contributors page](../../graphs/contributors) for all contribut
 [link-codeclimate]: https://codeclimate.com/github/svenluijten/helpers
 [link-quality]: https://scrutinizer-ci.com/g/svenluijten/helpers/?branch=master
 [link-insight]: https://insight.sensiolabs.com/projects/:insight
+[link-styleci]: https://styleci.io/repos/83132069
