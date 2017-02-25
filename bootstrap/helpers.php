@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('active_route')) {
+if (! function_exists('active_route')) {
     /**
      * Determine whether or not the current route has the given name.
      *
