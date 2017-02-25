@@ -57,13 +57,13 @@ Can be useful for navigation in blade templates:
     <ul>
         <li class="{{ current_route('home', 'active', null) }}">
             <a href="{{ route('home') }}">Home</a>
-        </li>    
+        </li>
         <li class="{{ current_route('contact', 'active', null) }}">
             <a href="{{ route('contact') }}">Contact</a>
-        </li>    
+        </li>
         <li class="{{ current_route('about', 'active', null) }}">
             <a href="{{ route('about') }}}">About</a>
-        </li>    
+        </li>
     </ul>
 </nav>
 ```
