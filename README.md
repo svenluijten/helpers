@@ -35,8 +35,8 @@ Or add the package to your dependencies in `composer.json` and run
 }
 ```
 
-## Usage
-The helpers and their documentation / usage is written below:
+## Available functions
+All available functions are listed here, along with their usage and an example on how I would use them.
 
 ### current_route
 This function will return `true` if you're on the given route name, `false` otherwise.
