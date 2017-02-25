@@ -89,7 +89,7 @@ though. See the [contributors page](../../graphs/contributors) for all contribut
 [ico-travis]: https://img.shields.io/travis/svenluijten/helpers.svg?style=flat-square
 [ico-codeclimate]: https://img.shields.io/codeclimate/github/svenluijten/helpers.svg?style=flat-square
 [ico-quality]: https://img.shields.io/scrutinizer/g/svenluijten/helpers.svg?style=flat-square
-[ico-insight]: https://img.shields.io/sensiolabs/i/:insight.svg?style=flat-square
+[ico-insight]: https://img.shields.io/sensiolabs/i/07542093-e5a4-40a1-8279-5d7c1ff4fda6.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/83132069/shield
 
 [link-packagist]: https://packagist.org/packages/sven/helpers
@@ -97,5 +97,5 @@ though. See the [contributors page](../../graphs/contributors) for all contribut
 [link-travis]: https://travis-ci.org/svenluijten/helpers
 [link-codeclimate]: https://codeclimate.com/github/svenluijten/helpers
 [link-quality]: https://scrutinizer-ci.com/g/svenluijten/helpers/?branch=master
-[link-insight]: https://insight.sensiolabs.com/projects/:insight
+[link-insight]: https://insight.sensiolabs.com/projects/07542093-e5a4-40a1-8279-5d7c1ff4fda6
 [link-styleci]: https://styleci.io/repos/83132069
