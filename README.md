@@ -36,38 +36,38 @@ Or add the package to your dependencies in `composer.json` and run
 ## Available functions
 All available functions are listed here, along with their usage and an example on how I would use them.
 
-### current_route
+### active_route
 This function will return `true` if you're on the given route name, `false` otherwise:  
 
 ```php
-$isHome = current_route('home');
+$isHome = active_route('home');
 ```
 
 You may also pass in optional `$positive` or `$negative` values to return:
 
 ```php
-$isContact = current_route('contact', 'Yes!', 'No :(');
+$isContact = active_route('contact', 'Yes!', 'No :(');
 ```
 
 There is also an option to give it an array of multiple route names instead of just one. The function will
 return `$positive` if the current route matches any of the given ones, `$negative` otherwise:
 
 ```php
-$isContactOrAbout = current_route(['contact', 'about']);
+$isContactOrAbout = active_route(['contact', 'about']);
 ```
 
-`current_route()` can be tremendously useful for `active` states on for instance navigation in blade templates:
+`active_route()` can be tremendously useful for `active` states on for instance navigation in blade templates:
 
 ```blade
 <nav>
     <ul>
-        <li class="{{ current_route('home', 'active', null) }}">
+        <li class="{{ active_route('home', 'active', null) }}">
             <a href="{{ route('home') }}">Home</a>
         </li>
-        <li class="{{ current_route('contact', 'active', null) }}">
+        <li class="{{ active_route('contact', 'active', null) }}">
             <a href="{{ route('contact') }}">Contact</a>
         </li>
-        <li class="{{ current_route('about', 'active', null) }}">
+        <li class="{{ active_route('about', 'active', null) }}">
             <a href="{{ route('about') }}}">About</a>
         </li>
     </ul>
