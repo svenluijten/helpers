@@ -2,7 +2,7 @@
 
 namespace Sven\Helpers\Tests;
 
-class CurrentRouteTest extends TestCase
+class ActiveRouteTest extends TestCase
 {
     /**
      * @param \Illuminate\Contracts\Foundation\Application $app
