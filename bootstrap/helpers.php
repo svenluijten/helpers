@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Routing\Router;
+
 if (! function_exists('active_route')) {
     /**
      * Determine whether or not the current route has the given name.
@@ -12,12 +14,8 @@ if (! function_exists('active_route')) {
      */
     function active_route($route, $positive = true, $negative = false)
     {
-        $router = app(\Illuminate\Routing\Router::class);
+        $router = app(Router::class);
 
-        if (is_array($route)) {
-            return in_array($router->currentRouteName(), $route) ? $positive : $negative;
-        }
-
-        return $router->currentRouteNamed($route) ? $positive : $negative;
+        return in_array($router->currentRouteName(), (array) $route) ? $positive : $negative;
     }
 }
