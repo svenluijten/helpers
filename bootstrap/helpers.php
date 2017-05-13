@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Routing\Router;
 use Illuminate\Support\Str;
+use Illuminate\Routing\Router;
 
 if (! function_exists('active_route')) {
     /**
@@ -23,6 +23,9 @@ if (! function_exists('active_route')) {
 
 if (! function_exists('str_possessive')) {
     /**
+     * Appends an apostrophe and returns the possessive form of the given
+     * subject string.
+     *
      * @param string $subject
      *
      * @return string
@@ -33,6 +36,6 @@ if (! function_exists('str_possessive')) {
             $suffix = 's';
         }
 
-        return $subject . '\'' . ($suffix ?? '');
+        return $subject.'\''.($suffix ?? '');
     }
 }

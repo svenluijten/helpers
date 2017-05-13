@@ -74,6 +74,22 @@ $isContactOrAbout = active_route(['contact', 'about']);
 </nav>
 ```
 
+### str_possessive
+This function will return the possessive form of a subject string you give it:
+
+```php
+echo str_possessive('Brian') . ' house.'; // "Brian's house."
+```
+
+It will only append an apostrophe (without the trailing `s`) if the given subject ends
+in `s`, `z` or `ch`:
+
+```php
+echo str_possessive('Dolores') . ' eyes.'; // "Dolores' eyes."
+echo str_possessive('Sanchez') . ' shoes.'; // "Sanchez' shoes."
+echo str_possessive('Gretch') . ' plate.'; // Gretch' plate."
+```
+
 ## Contributing
 All contributions (pull requests, issues and feature requests) are
 welcome. Make sure to read through the [CONTRIBUTING.md](CONTRIBUTING.md) first,
