@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Routing\Router;
+use Illuminate\Support\Str;
 
 if (! function_exists('active_route')) {
     /**
@@ -17,5 +18,21 @@ if (! function_exists('active_route')) {
         $router = app(Router::class);
 
         return in_array($router->currentRouteName(), (array) $route) ? $positive : $negative;
+    }
+}
+
+if (! function_exists('str_possessive')) {
+    /**
+     * @param string $subject
+     *
+     * @return string
+     */
+    function str_possessive($subject)
+    {
+        if (! Str::endsWith($subject, ['s', 'z', 'ch'])) {
+            $suffix = 's';
+        }
+
+        return $subject . '\'' . ($suffix ?? '');
     }
 }
