@@ -87,7 +87,7 @@ in `s`, `z` or `ch`:
 ```php
 echo str_possessive('Dolores') . ' eyes.'; // "Dolores' eyes."
 echo str_possessive('Sanchez') . ' shoes.'; // "Sanchez' shoes."
-echo str_possessive('Gretch') . ' plate.'; // Gretch' plate."
+echo str_possessive('Gretch') . ' plate.'; // "Gretch' plate."
 ```
 
 ## Contributing
