@@ -133,16 +133,10 @@ though. See the [contributors page](../../graphs/contributors) for all contribut
 [ico-version]: https://img.shields.io/packagist/v/sven/helpers.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-green.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/sven/helpers.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/svenluijten/helpers.svg?style=flat-square
-[ico-codeclimate]: https://img.shields.io/codeclimate/github/svenluijten/helpers.svg?style=flat-square
-[ico-quality]: https://img.shields.io/scrutinizer/g/svenluijten/helpers.svg?style=flat-square
-[ico-insight]: https://img.shields.io/sensiolabs/i/07542093-e5a4-40a1-8279-5d7c1ff4fda6.svg?style=flat-square
+[ico-circleci]: https://img.shields.io/circleci/project/github/svenluijten/helpers.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/83132069/shield
 
 [link-packagist]: https://packagist.org/packages/sven/helpers
 [link-downloads]: https://packagist.org/packages/sven/helpers
-[link-travis]: https://travis-ci.org/svenluijten/helpers
-[link-codeclimate]: https://codeclimate.com/github/svenluijten/helpers
-[link-quality]: https://scrutinizer-ci.com/g/svenluijten/helpers/?branch=master
-[link-insight]: https://insight.sensiolabs.com/projects/07542093-e5a4-40a1-8279-5d7c1ff4fda6
+[link-circleci]: https://circleci.com/gh/svenluijten/helpers
 [link-styleci]: https://styleci.io/repos/83132069

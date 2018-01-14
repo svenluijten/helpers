@@ -7,4 +7,6 @@ risky: false
 enabled:
   - phpdoc_order
   - phpdoc_separation
-  - unalign_double_arrow
+
+disabled:
+  - length_ordered_imports
