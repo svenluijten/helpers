@@ -90,6 +90,37 @@ echo str_possessive('Sanchez') . ' shoes.'; // "Sanchez' shoes."
 echo str_possessive('Gretch') . ' plate.'; // "Gretch' plate."
 ```
 
+### pipe
+The `pipe()` function will simply return an instance of the `\Illuminate\Pipeline\Pipeline` 
+class from Laravel's container, which allows for some neat chaining:
+
+```php
+echo pipe('hello')->through([
+    AddComma::class,
+    AddWorld::class,
+])->then(function ($content) {
+    return $content;
+}); // This will output "hello, world!"
+
+// AddComma class:
+class AddComma
+{
+    public function handle($string, Closure $next)
+    {
+        return $next($string . ',');
+    }
+}
+
+// AddWorld class:
+class AddWorld
+{
+    public function handle($string, Closure $next)
+    {
+        return $next($string . ' world!');
+    }
+}
+```
+
 ## Contributing
 All contributions (pull requests, issues and feature requests) are
 welcome. Make sure to read through the [CONTRIBUTING.md](CONTRIBUTING.md) first,
