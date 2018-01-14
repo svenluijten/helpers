@@ -10,3 +10,4 @@ enabled:
 
 disabled:
   - length_ordered_imports
+  - method_visibility_required
