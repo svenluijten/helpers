@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Pipeline\Pipeline;
 use Illuminate\Support\Str;
 use Illuminate\Routing\Router;
 
@@ -37,5 +38,22 @@ if (! function_exists('str_possessive')) {
         }
 
         return $subject.'\''.($suffix ?? '');
+    }
+}
+
+if (! function_exists('pipe')) {
+    /**
+     * Send the given subject through a pipeline.
+     *
+     * @param mixed $subject
+     *
+     * @return \Illuminate\Pipeline\Pipeline
+     */
+    function pipe($subject)
+    {
+        /** @var \Illuminate\Pipeline\Pipeline $pipeline */
+        $pipeline = app(Pipeline::class);
+
+        return $pipeline->send($subject);
     }
 }
