@@ -1,6 +1,6 @@
 ![helpers](https://cloud.githubusercontent.com/assets/11269635/23331282/fc1f9b66-fb62-11e6-953d-19d813ea39ef.jpg)
 
-# Package
+# Helpers
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
