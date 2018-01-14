@@ -18,11 +18,17 @@ class PipeTest extends TestCase
     {
         pipe('foo')->through([
             new class {
-                public function handle($content, Closure $next) { return $next($content . '-bar'); }
+                public function handle($content, Closure $next)
+                {
+                    return $next($content.'-bar');
+                }
             },
             new class {
-                public function handle ($content, Closure $next) { return $next($content . '-baz'); }
-            }
+                public function handle($content, Closure $next)
+                {
+                    return $next($content.'-baz');
+                }
+            },
         ])->then(function ($content) {
             $this->assertEquals('foo-bar-baz', $content);
         });
